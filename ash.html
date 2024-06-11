@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      div#main {
+        width: 1512px;
+        height: 2411px;
+        background-color: #191818;
+      }
+      div#top {
+        width: 100%;
+        height: 588px;
+        background-image: url("https://s3-alpha-sig.figma.com/img/894b/df6e/56b90bbef82ad188765f40d12a46caef?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EZX~W-t56ghYs-JI3U81XEqojE3Z4UzHP8YxTo9a3YGqMVlHqd86q6OPdoMy6qDHtklUzvWYCuPFxWs6wU35M7lVGj6zyjGRfMDMCu654yzQDX0yDUhZ4nSb0IjrH3meLZSUh9TFE-3TCkvHGzz2GBVQiv1HE4IHSnuXA3Dr16BXVfWl6~1HmkLO9y0wh0DSjMIVp8a16j28tDB0ui36-lCnwFkrUgCi49z6fec03pL8kwOo3df4PcViJ2qqyNNDMwnjpm64lGt9TruH16Lg7iKgOiFC1SrpMdpBtKgwXykI8cLt6Z9eeqBaQgsQAaH8BUcyp6TsI55JL~JQyixbKg__");
+      }
+      div#top > div:nth-of-type(1) {
+        width: 106px;
+        height: 117px;
+        background-image: url("https://s3-alpha-sig.figma.com/img/79e0/db14/6de61e6b7e512045a7cc5fab1681c6dc?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VscR4Nm5OUPj~oPdTRM90Zi32E~EDmhhgJkJm0huODpr88XvQ0Qv0qkE2C3AM6271SRNZ5zcdcIPSV1u~vqCyMi7BPG94H-AitY8dLPeCyxWwMuT-xiCN9u5rIkQzVkJceEu3dF3W7nnogx9UIWPRw7b0FZrnbNe68mZSz-I1lu7bB7L5rCkfiL0IOZ-QyInnZ-yKxSq7pEvwxA-DJ6QUqIGnRmLt8heHZXP-Esqaha~tkOlttP8xRq4G-LDXoK-iFR71Sl5R58nPsTXhvywLI0J6KNsT2c7HAiZ-ummaAYqUleqFEnZ3saygX3T0E-HwoLmExKMD1-AGJ7kOFhQUg__");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 27px;
+        left: 88px;
+      }
+      div#top > div:nth-of-type(2) {
+        width: 122px;
+        height: 32px;
+        position: absolute;
+        top: 56px;
+        left: 198px;
+      }
+      div#top > div:nth-of-type(3) {
+        width: 583px;
+        height: 52px;
+        background-color: black;
+        border-radius: 20px;
+        position: absolute;
+        top: 46px;
+        left: 498px;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+      }
+      div#top > div:nth-of-type(3) > span {
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+      }
+      div#top > div:nth-of-type(4) {
+        width: 127px;
+        height: 38px;
+        position: absolute;
+        top: 54px;
+        left: 1296px;
+        background-color: #ed0137;
+        border-radius: 15.44px;
+      }
+      div#top > div:nth-of-type(5) {
+        width: 1262px;
+        height: 108px;
+        position: absolute;
+        top: 276px;
+        left: 123px;
+        border-radius: 15.44px;
+      }
+
+      div#mid {
+        width: 100%;
+        height: 679px;
+      }
+      div#mid > div:nth-of-type(1) {
+        width: 389px;
+        height: 52px;
+        position: relative;
+        top: 89px;
+        left: 163px;
+        font-size: 44px;
+        line-height: 52.36px;
+        font-weight: 400;
+        color: #ed0137;
+      }
+      div#mid > div:nth-of-type(2) {
+        width: 587px;
+        height: 207px;
+        position: relative;
+        top: 89px;
+        left: 163px;
+        font-size: 44px;
+        font-weight: 400;
+      }
+      div#mid > div:nth-of-type(2) > p {
+        font-size: 24px;
+        color: #fffcfd;
+      }
+      div#mid > div:nth-of-type(3) {
+        width: 178.94px;
+        height: 54.06px;
+        background-color: #D51B46;
+        position: absolute;
+        top: 1048px;
+        left: 166px;
+        border-radius: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div#mid > div:nth-of-type(4) {
+        width: 795px;
+        height: 679px;
+        background-image: url("https://s3-alpha-sig.figma.com/img/72d9/2d64/713f95c34c945a62844515044f63fcd4?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ObzP6GYRcEB~zef8vFN-rh96iJfkhyG~k1V1CkeH07qUvrmNCjY29A4xQOgEEnpZu6DsByQS26t1BH0KVtH9CePiB0vR97nwpcBJ9flENfzMPkz2xUSzTfCBvUZB8qD65hWHhHOiFttqKnS4ei1QRKP3dHlfJHSm74R~IterTx0nI2IejgZICVae3ZH0vNWquSwfrZe2Zatbd52R2hqEdiGx~CeIs4d6Gmxb0aCXTyxG9BZ4FOMK9Hr5JrMqX-oJcyh1o36aZUg0gheRW5vsb8lMg5ebj4H9zpXSTQXinJ-I~T67fBj1OG~pOflFif041trRLdqRxfpx7dzkBGYgcg__");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 588px;
+        left: 723px;
+      }
+      #mid2{
+        width: 100%;
+        height: 716px;
+    }
+    div#mid2>div:nth-of-type(1){
+        width: 282px;
+        height: 52px;
+        position: relative;
+        left: 613px;
+        top: 64px;
+        
+    }
+    div#mid2>div:nth-of-type(2){
+        width: 100%;
+        height: 716px;
+        background-image: url("https://s3-alpha-sig.figma.com/img/7fb8/c9c7/2e63edc105c3925cfa651946f437c2fd?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hdP4FLyi9hVrXDZhu1xm9L3ho0v8OKkB2uEC1Q2VUIwedrjQGJvvuelZxHfak0co7qxBFm9Vs8uKST261p3Hh7rV2bs31kDMfcA5ljHhLSiigOhQegHekqCIsMBQ9tuMc1e9x2zwcdx6T6bsp~fwlfzWX4k4xSWiTRVpLL2z~Vhrhge~W6Ny7Q5rUKreHEHAlSxc~5iIUxcq3VobS4K4fddRoH5cbpL6GRPjW7lcBi84uGqsmKkB0arUBFnCkokaQ1Fb8-FTVlsd6LUXI1zFPdYUMK-izTHT9UDjlTKJxyhPWAzLXqhhGOrVwbqEWNFBp3UznRm6-8a6JZd8Kzo-FQ__");
+        opacity: 20%;
+        
+    }
+    div#mid2>div:nth-of-type(3){
+        width: 1159.1px;
+        height: 349px;
+        position: absolute;
+        left: 161px;
+        top: 1495px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 69.77px;
+    }
+    div#mid2>div:nth-of-type(3)>div{
+        background-image: url("https://s3-alpha-sig.figma.com/img/79e0/db14/6de61e6b7e512045a7cc5fab1681c6dc?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VscR4Nm5OUPj~oPdTRM90Zi32E~EDmhhgJkJm0huODpr88XvQ0Qv0qkE2C3AM6271SRNZ5zcdcIPSV1u~vqCyMi7BPG94H-AitY8dLPeCyxWwMuT-xiCN9u5rIkQzVkJceEu3dF3W7nnogx9UIWPRw7b0FZrnbNe68mZSz-I1lu7bB7L5rCkfiL0IOZ-QyInnZ-yKxSq7pEvwxA-DJ6QUqIGnRmLt8heHZXP-Esqaha~tkOlttP8xRq4G-LDXoK-iFR71Sl5R58nPsTXhvywLI0J6KNsT2c7HAiZ-ummaAYqUleqFEnZ3saygX3T0E-HwoLmExKMD1-AGJ7kOFhQUg__");
+        background-position: center;
+        background-size: cover;
+        border-radius: 13.17px;
+    }
+    #bottom{
+        width: 100%;
+        height: auto;
+    }
+    #bottom>div:nth-of-type(1){
+        width: 200px;
+        height: 220px;
+        background-image: url("https://s3-alpha-sig.figma.com/img/79e0/db14/6de61e6b7e512045a7cc5fab1681c6dc?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VscR4Nm5OUPj~oPdTRM90Zi32E~EDmhhgJkJm0huODpr88XvQ0Qv0qkE2C3AM6271SRNZ5zcdcIPSV1u~vqCyMi7BPG94H-AitY8dLPeCyxWwMuT-xiCN9u5rIkQzVkJceEu3dF3W7nnogx9UIWPRw7b0FZrnbNe68mZSz-I1lu7bB7L5rCkfiL0IOZ-QyInnZ-yKxSq7pEvwxA-DJ6QUqIGnRmLt8heHZXP-Esqaha~tkOlttP8xRq4G-LDXoK-iFR71Sl5R58nPsTXhvywLI0J6KNsT2c7HAiZ-ummaAYqUleqFEnZ3saygX3T0E-HwoLmExKMD1-AGJ7kOFhQUg__");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 2077px;
+        left: 658px;
+    }
+    #bottom>div:nth-of-type(2){
+        width: 114px;
+        height: 26px;
+        position: relative;
+        top: 275px;
+        left: 710px;
+        font-size: 24px;
+        color: #FF002A;
+    }
+    #bottom>div:nth-of-type(3){
+        width: 618px;
+        height: 20px;
+        position: relative;
+        top: 300px;
+        left: 480px;
+        display: flex;
+        flex-direction: row;
+        color: #FFFFFF;
+        font-size: 12.82px;
+
+    }
+    </style>
+  </head>   
+  <body>
+    <div id="main">
+      <div id="top">
+        <div></div>
+        <div
+          style="
+            font-size: 32px;
+            color: #ffffff;
+            line-height: 32px;
+            font-weight: 400;
+          "
+        >
+          Saviour
+        </div>
+        <div>
+          <span style="margin-left: 24px">Home</span><span>IDO</span
+          ><span>Takenamics</span><span>Roadmap</span><span>Coming Soon</span>
+        </div>
+        <div>
+          <p style="margin-left: 16px; margin-top: 10px">Connect Wallet</p>
+        </div>
+        <div>
+          <pre style="font-size: 45px; color: #fbf6f6; text-align: center">
+Where Blockchain Heroes Thrive, Rescuing 
+    Dreams, Elevating Fortunes.</pre
+          >
+        </div>
+      </div>
+      <div id="mid">
+        <div>INTRODUCTION</div>
+        <div>
+          <p>We've all been in the mud once, and now we've</p>
+          <p>decided to fight it out.</p>
+          <p>Pay tribute to those pioneers of WEB3 and the</p>
+          <p>warriors who dedicated their love to the</p>
+          <p>blockchain. Save the lucky ones alive, join us to</p>
+          <p>save the future!</p>
+          <p>Our mission is to empower everyone to share</p>
+          <p>wealth and succeed.</p>
+          <p>read more...</p>
+        </div>
+        <div><p style="font-size: 20px; color: #FFFFFF;">Document</p></div>
+        <div></div>
+      </div>
+
+      <div id="mid2">
+            <div><p style="color: #ED0137; font-size: 44px; opacity: 100%; padding: 0px; margin: 0px;">ROAD MAP</p></div>
+            <div></div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+      </div>
+
+      <div id="bottom">
+        <div></div>
+        <div>SITEMAP</div>
+        <div>
+            <p style="margin-right:32px;">Home</p>
+            <p style="margin-right:32px;">IDO</p>
+            <p style="margin-right:32px;">Tekenomics</p>
+            <p style="margin-right:24px;">Road Map</p>
+            <p style="margin-right:32px;">Whitepaper</p>
+            <p style="margin-right:32px;"> Pledge</p>
+            <p style="margin-right:32px;">NFT</p>
+            <p >Games</p>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
