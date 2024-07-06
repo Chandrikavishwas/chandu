@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color: black;
+        }
+        div#box{
+            max-width: 1200px;
+            height:100vh;
+            margin: auto;
+            background-color:white;
+        }
+        div#box>h1{
+            color: #3f8a88;
+            text-align: center;
+            font-size: 50px;
+        }
+        #cal{
+            width:30%;
+            height:60vh;            
+            box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;;            
+            margin: auto;
+            margin-top: 60px;
+            padding:40px;
+            display: grid;
+            gap: 10px;
+            grid-template-areas:"q1 q1 q1 q1" 
+                                "q2 q3 q4 q5"
+                                "q6 q7 q8 q9 "
+                                "q10  q11 q12 q13 "
+                                " q14 q15 q16 q17";            
+        }
+        div#cal>div{            
+            border-radius: 10px;
+            font-size:30px;
+            text-align: center; 
+            padding-top: 30px;
+            box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;;           
+        }
+        div#cal>div:nth-of-type(1){
+            grid-area: q1;
+        }
+        div#cal>div:nth-of-type(2){
+            grid-area: q2;
+        }
+        div#cal>div:nth-of-type(3){
+            grid-area: q3;
+        }
+        div#cal>div:nth-of-type(4){
+            grid-area: q4;
+        }
+        div#cal>div:nth-of-type(5){
+            grid-area: q5;
+            background-color: black;
+            color: white;
+        }
+        div#cal>div:nth-of-type(6){
+            grid-area: q6;
+        }div#cal>div:nth-of-type(7){
+            grid-area: q7;
+        }
+        div#cal>div:nth-of-type(8){
+            grid-area: q8;
+        }
+        div#cal>div:nth-of-type(9){
+            grid-area: q9;
+            background-color: black;
+            color: white;
+        }
+        div#cal>div:nth-of-type(10){
+            grid-area: q10;
+        }
+        div#cal>div:nth-of-type(11){
+            grid-area: q11;
+        }
+        div#cal>div:nth-of-type(12){
+            grid-area: q12;
+        }
+        div#cal>div:nth-of-type(13){
+            grid-area: q13;
+            background-color: black;
+            color: white;
+        }
+        div#cal>div:nth-of-type(14){
+            grid-area: q14;
+            background-color: red;
+            color: white;
+        }
+        div#cal>div:nth-of-type(15){
+            grid-area: q15;
+        }
+        div#cal>div:nth-of-type(16){
+            grid-area: q16;
+            background-color: black;
+            color: white;
+        }
+        div#cal>div:nth-of-type(17){
+            grid-area: q17;
+            background-color: black;
+            color: white;
+        }        
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="box">
+            <h1>Masai Calculator</h1>
+            <div id="cal">
+                <div></div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>*</div>
+                <div>C</div>
+                <div>0</div>
+                <div>=</div>
+                <div>/</div>                
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
